@@ -1,8 +1,14 @@
-<h1>Stupid Coaching</h1>
-<p><%= params[:question] %></p>
-<p><em>-You</em></p>
-<br>
-<p><%= @coach_message %></p>
-<p><em>-Your coach</em></p>
-<br>
-<p><%= link_to "Ask a new question", ask_path %></p>
+<div class="body">
+  <h1>Stupid Coaching</h1>
+  <div id="noob">
+    <p><%= params[:question] %></p>
+    <p><em>-You</em></p>
+  </div>
+  <br>
+  <div id="coach">
+    <p><%= @coach_message %></p>
+    <p><em>-Your coach</em></p>
+  </div>
+  <br>
+  <p><%= link_to "Ask a new question", ask_path, class: "no_underline" %></p>
+</div>
